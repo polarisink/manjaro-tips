@@ -11,7 +11,11 @@ sudo pacman -S archlinuxcn-keyring
 sudo pacman -S base-devel
 
 # if can not open terminal,install deepin terminal,edit /etc/locale.gen
-# sudo locale-gen
+sudo echo "zh_CN.UTF-8 UTF-8" >> /etc/locale.gen
+sudo echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+sudo locale-gen
+sudo localectl set-locale LANG=zh_CN.UTF-8
+# then you should reboot
 
 # install yay
 sudo pacman -S yay

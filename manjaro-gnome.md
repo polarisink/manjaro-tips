@@ -32,8 +32,12 @@ sudo pacman -S base-devel
 ## if can not open terminal
 
 ```shell
-# first,edit /etc/locale.gen
+# first, install another terminal such as deepn-terminal in gui app-store
+sudo echo "zh_CN.UTF-8 UTF-8" >> /etc/locale.gen
+sudo echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
 sudo locale-gen
+sudo localectl set-locale LANG=zh_CN.UTF-8
+# then you should reboot
 ```
 
 ## yay
